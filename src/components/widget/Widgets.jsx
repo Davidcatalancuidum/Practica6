@@ -1,14 +1,24 @@
 import"./widget.scss";
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 
-const Widget = () =>{
+const Widget = ({ type }) =>{
+
+    let data;
     return(
         <div className="widget">
             <div className="left">
-                <span className="title2">USERS</span>
-                <span className="counter2">5434</span>
-                <span className="counter2">See all</span>
+                <span className="title">USERS</span>
+                <span className="counter">21312</span>
+                <span className="link">See all user</span>
             </div>
-            <div className="right">right</div>
+            <div className="right">
+                <div className="percentage positive">
+                    <KeyboardArrowUpOutlinedIcon />
+                    20 %
+                </div>
+                <PersonOutlineOutlinedIcon className="icon"/>
+            </div>
         </div>
     )
 }
